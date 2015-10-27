@@ -1,0 +1,275 @@
+@import url(http://fonts.googleapis.com/css?family=Zeyada);
+
+/* *********************************
+   Some Style Overrides on Bootstrap
+  ********************************** */
+body{
+  background-color: #F5EDD5;
+}
+/* all the nav font */
+.small-logo, .navbar-nav > li , .big-logo-row  {
+  font-family: "Zeyada";
+}
+
+.profile , .project  ,.contact ,p{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* ******************** */
+.navbar-inverse {
+  background: rgba(62,195,246,0);
+  border-bottom: none;
+
+}
+.navbar-inverse .navbar-toggle {
+  border: 1px solid #333;#F5EDD5
+  border-color: (255,255,255,0.7);
+
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: transparent;
+  @media (max-width: 767px) {
+  background: rgba(255,255,255,0.75);
+  }
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+
+}
+
+.navbar-inverse .navbar-nav > li {
+  position: relative;
+  top:1px;
+  font-size: 2em;
+
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: green;
+}
+
+
+/*  TOOLBAR Logo
+------------------------------------  */
+.small-logo-container {
+  padding-top: 7px;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.small-logo {
+  color: white;
+  font-size: 2em;
+  padding-left: 20px;
+  text-align: center;
+
+}
+
+@media screen and (min-width: 1000px){
+  .small-logo {
+    font-size: 2.5em;
+  }
+}
+
+/*  Big Logo
+------------------------------------  */
+.big-logo-row ,.big-logo-container {
+  margin-bottom: 20px;
+}
+
+.big-logo-row > img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+  
+  
+.big-logo-container > h1  , .big-logo-container > h2{
+  position: relative;
+  text-align: center;
+  font-weight: bolder;
+  color: white;
+  margin-top: 30px;
+
+}
+
+.big-logo-container > h1 {
+  text-transform: uppercase;
+  margin-top: 80px;
+
+}
+
+
+/* ABOUT ME CONTENT && PROJECT CONTENT && CONTACT CONTENT
+-------------------------------------------------  */
+.profile .row{
+  position: relative;
+  margin-bottom:30px; 
+}
+
+.profile h3 ,.project h3 , .contact h3{
+  position:relative;
+  text-align: center;
+  margin-bottom: 30px;
+  top: 20px;
+  color: gray;
+}
+
+.profile hr ,.project hr , .contact hr{
+  position: relative;
+  top:10px;
+  height: 2px;
+  /*width: 150px;*/
+  color: black;
+}
+
+.profile h4{
+  position:relative;
+  color: #009933;
+}
+
+.profile p{
+  position:relative;
+  color: black;
+  
+}
+
+.profile .col-lg-4 {
+  position:relative;
+  text-align: center;
+}
+
+.profile .col-lg-4 img{
+  
+  height:240px;
+  width: 280px;
+}
+
+.blockDescription{
+  position:relative;
+  padding-left: 30px;
+  background-color: white;
+}
+
+/*project small title */
+.project p{
+  color: #009933;
+  /*font-family: Arial;*/
+}
+/* project content */
+.project h5{
+  /* font-family: Arial;*/
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* FOOTER CONTENT 
+---------------------------------------------------*/
+
+
+.footer .arrow{
+  
+  text-align: center;
+  position: relative;
+}
+
+.footer {
+  bottom:0;
+  left:0;
+  position:fixed;
+  width: 100%;
+  height: 2em;
+  overflow:hidden;
+  margin:0 auto;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index:999;
+}
+.footer:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 15em;
+}
+
+.footer .container-fluid{
+    background-image:url("footer.jpg");
+    height:15em;
+}
+
+/*Center align the text within the three columns below the carousel */
+.footer .row{
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.footer .social li{
+  display:inline;
+  margin-right: 10px;
+}
+
+.footer .social li :hover{
+     
+  height:60px;
+  width:60px;
+}
+
+/* RESPONSIVE SCREEN SIZE
+----------------------------------------------------*/
+
+@media screen and (min-width: 400px) {
+  
+  .big-logo-row ,.big-logo-row > img ,.big-logo-container {
+    height: 400px;
+  }
+
+
+  h1{font-size: 6em;}
+  h2{font-size: 4em;}
+  h3{font-size: 2.5em;}
+  h4{font-size: 1.6em;}
+  h5{font-size: 1em;}
+  p{font-size: 1.3em;}
+
+}
+
+
+@media screen and (min-width: 1000px) {
+  
+  .big-logo-row ,.big-logo-row > img ,.big-logo-container{  
+    height: 600px;
+  }
+
+  h1{font-size: 8em;}
+  h2{font-size: 5em;}
+  h3{font-size: 3.5em;}
+  h4{font-size: 2em;}
+  h5{font-size: 1.2em;}
+  p{font-size: 1.5em;}
+}
+
+
